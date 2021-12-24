@@ -5,69 +5,59 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 📃 Descrição
 
-## Description
+NestJS Boilerplate é uma aplicação para servir como base para iniciar um projeto. 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 📋 Funcionalidades
 
-## Installation
+- [x] Login
+- [x] Criar usuário
 
-```bash
-$ npm install
-```
+## 🛠 Em construção...
 
-## Running the app
+- [x] Módulo para envio de e-mails
+- [x] Recuperar minha senha
+
+## 🚀 Rodando a aplicação
+
+É necessário ter instalado na sua máquina
+
+- [NodeJS](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Yarn](https://yarnpkg.com/)
 
 ```bash
-# development
-$ npm run start
+# clone a aplicação
 
-# watch mode
-$ npm run start:dev
+$ git clone https://github.com/jeversonjv/nestjs-boilerplate
 
-# production mode
-$ npm run start:prod
+# entre na pasta
+
+$ cd nestjs-boilerplate
+
+# crie seu arquivo .env e configure com sua url do mongodb
+
+$ cp .env.example .env
+
+# rode a aplicação
+
+$ yarn start:dev
+
+# Pronto, agora a aplicação estará rodando na porta 3000
 ```
 
-## Test
+## 👦 Autor
 
-```bash
-# unit tests
-$ npm run test
+Desenvolvido por <b>Jeverson Gonçalves</b> 👊😎👊 <br /><br />
+<a href="https://github.com/jeversonjv">
+ <img src="https://avatars.githubusercontent.com/u/46850397?v=4" width="80px;" alt="Jeverson Gonçalves" style="border-radius:50%"/>
+</a>
 
-# e2e tests
-$ npm run test:e2e
+[![Linkedin Badge](https://img.shields.io/badge/-Jeverson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jeverson-gon%C3%A7alves-6612a214b/)](https://www.linkedin.com/in/jeverson-gon%C3%A7alves-6612a214b/)
 
-# test coverage
-$ npm run test:cov
-```
+[![Gmail Badge](https://img.shields.io/badge/-jeversontp@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jeversontp@gmail.com)](mailto:jeversontp@gmail.com)
 
-## Support
+## 📑 Licença
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+O projeto é [MIT](LICENSE).
