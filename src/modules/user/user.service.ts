@@ -16,7 +16,7 @@ export class UserService {
 
   async findOneByCriteria(criteria: Partial<User>): Promise<User> {
     this.logger.debug('findOneByCriteria', criteria);
-    return this.userRepository.findOne(criteria);
+    return this.userRepository.findOne(criteria as any);
   }
 
   async createUser(createUserDto: CreateUserDto): Promise<ResponseIdDto> {

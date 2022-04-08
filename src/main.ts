@@ -3,9 +3,9 @@ import { AppModule } from './app.module';
 import { Env } from './shared/helpers/env.helper';
 import colors = require('colors/safe');
 import { ValidationPipe } from '@nestjs/common';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
 import * as compression from 'compression';
-import * as rateLimit from 'express-rate-limit';
+import { rateLimit } from 'express-rate-limit';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
