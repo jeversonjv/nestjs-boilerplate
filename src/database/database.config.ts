@@ -12,6 +12,9 @@ export const config: TypeOrmModuleOptions = {
   migrations: [`${__dirname}/migrations/*{.ts,.js}`],
   migrationsRun: Env.getString('NODE_ENV') === 'development',
   synchronize: Env.getString('NODE_ENV') === 'development',
+  cli: {
+    migrationsDir: 'src/database/migrations',
+  },
 };
 
 export default config;

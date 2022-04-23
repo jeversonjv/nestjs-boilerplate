@@ -26,7 +26,7 @@ export class User {
   @Column({ type: 'varchar', length: 60 })
   firstName: string;
 
-  @Column({ type: 'varchar', length: 60 })
+  @Column({ type: 'varchar', length: 61 })
   lastName: string;
 
   @CreateDateColumn({ type: 'timestamp' })
