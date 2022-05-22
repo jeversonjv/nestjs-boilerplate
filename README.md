@@ -7,7 +7,7 @@
 
 ## 📃 Descrição
 
-NestJS Boilerplate é uma aplicação para servir como base para iniciar um projeto.
+NestJS Boilerplate é uma aplicação para servir como base para iniciar um projeto!
 
 ## 📋 Funcionalidades
 
