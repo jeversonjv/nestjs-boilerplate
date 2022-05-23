@@ -60,27 +60,27 @@ describe('AuthService', () => {
   });
 
   describe('register', () => {
-    test('should call userService.create once time and pass correct values', async () => {
+    test('Should call userService.create once time and pass correct values', async () => {
       const createUserSpy = jest.spyOn(userService, 'createUser');
       await authService.register(makeCreateUserDto());
       expect(createUserSpy).toHaveBeenCalledTimes(1);
       expect(createUserSpy).toHaveBeenCalledWith(makeCreateUserDto());
     });
 
-    test('should throw if userService.create throws', async () => {
+    test('Should throw if userService.create throws', async () => {
       jest.spyOn(userService, 'createUser').mockRejectedValueOnce(new Error());
       const promise = authService.register(makeCreateUserDto());
       expect(promise).rejects.toThrow();
     });
 
-    test('should return an object with id when create a user', async () => {
+    test('Should return an object with id when create a user', async () => {
       const result = await authService.register(makeCreateUserDto());
       expect(result).toEqual({ id: 'any_id' });
     });
   });
 
   describe('login', () => {
-    test('should call dependencies with correct values and return accessToken', async () => {
+    test('Should call dependencies with correct values and return accessToken', async () => {
       const loginDto = makeLoginDto();
 
       const findOneByCriteriaSpy = jest
@@ -111,7 +111,7 @@ describe('AuthService', () => {
       });
     });
 
-    test('should throw when user is not found', () => {
+    test('Should throw when user is not found', () => {
       jest.spyOn(userService, 'findOneByCriteria').mockResolvedValueOnce(null);
       const promise = authService.login(makeLoginDto());
       expect(promise).rejects.toThrow(
@@ -119,7 +119,7 @@ describe('AuthService', () => {
       );
     });
 
-    test('should throw when password is wrong', () => {
+    test('Should throw when password is wrong', () => {
       jest
         .spyOn(userService, 'findOneByCriteria')
         .mockResolvedValueOnce(
@@ -134,7 +134,7 @@ describe('AuthService', () => {
       );
     });
 
-    test('should throw if jwtService.sign throws', () => {
+    test('Should throw if jwtService.sign throws', () => {
       const loginDto = makeLoginDto();
 
       jest
