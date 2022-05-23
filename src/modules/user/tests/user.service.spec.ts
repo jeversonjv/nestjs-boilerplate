@@ -105,7 +105,7 @@ describe('UserService', () => {
       } catch (error) {
         expect(error).toBeInstanceOf(BadRequestException);
         expect(error.message).toBe(
-          `User with email ${createUserDto.email} already exists`,
+          `User with email ${createUserDto.email} already exists.`,
         );
       }
     });
