@@ -55,7 +55,7 @@ describe('UserService', () => {
   });
 
   describe('findOneByCriteria', () => {
-    test('Should throw when findOne throws', () => {
+    test('should throw when findOne throws', () => {
       const findOneSpy = jest.spyOn(userRepository, 'findOne');
       findOneSpy.mockRejectedValueOnce(new Error());
       const promise = userService.findOneByCriteria({});
@@ -64,7 +64,7 @@ describe('UserService', () => {
   });
 
   describe('createUser', () => {
-    test('Should call with correct params and create user', async () => {
+    test('should call with correct params and create user', async () => {
       const createUserDto = makeCreateUserDto();
 
       const fakeUserEntity = new User({
@@ -92,7 +92,7 @@ describe('UserService', () => {
       expect(result).toEqual({ id: fakeUserEntity.id });
     });
 
-    test('Should throw if user with email already exists', async () => {
+    test('should throw if user with email already exists', async () => {
       const createUserDto = makeCreateUserDto();
 
       try {
@@ -105,7 +105,7 @@ describe('UserService', () => {
       } catch (error) {
         expect(error).toBeInstanceOf(BadRequestException);
         expect(error.message).toBe(
-          `User with email ${createUserDto.email} already exists.`,
+          `User with email ${createUserDto.email} already exists`,
         );
       }
     });

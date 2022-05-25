@@ -8,7 +8,7 @@ describe('UserController', () => {
     }).compile();
   });
 
-  test('should be defined', () => {
+  test('Should be defined', () => {
     expect(UserController).toBeDefined();
   });
 });
